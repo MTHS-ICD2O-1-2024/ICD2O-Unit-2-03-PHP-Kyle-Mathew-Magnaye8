@@ -26,7 +26,7 @@
       </div>
     </header>
     <main class="mdl-layout__content">
-      <div class="left-image">
+      <div class="right-image">
         <img src="./images/notebook-animation.svg" alt="laptop image" width="250" />
       </div>
       <div class="page-content-php">
