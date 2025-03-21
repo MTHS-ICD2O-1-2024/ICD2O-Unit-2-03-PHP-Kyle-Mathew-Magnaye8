@@ -26,30 +26,18 @@
       </div>
     </header>
     <main class="mdl-layout__content">
-      <div class="left-image">
+      <div class="right-image">
         <img src="./images/notebook-animation.svg" alt="laptop image" width="250" />
       </div>
       <div class="page-content-php">
-        <form action="answer.php" method="POST">
-          <p>Name</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" name="name">
-            <label class="mdl-textfield__label" for="name-input">Name here ...</label>
-          </div>
-          <br />
-          <p>Age</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="age">
-            <label class="mdl-textfield__label" for="age-input">Age here ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            type="submit">
-            Enter
-          </button>
-        </form>
+        <div id="user-info">
+          <?php
+          $name = $_GET["name"];
+          $age = $_GET["age"];
+
+          echo "<p>Your info is: " . $name . ", age " . $age . ".</p>";
+          ?>
+        </div>
       </div>
     </main>
   </div>
